@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #c8f796, #3e3e3e);
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #c8f796;
+            width: 100%;
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+
+        .main-title {
+            margin: 30px 0;
+            font-size: 36px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .gallery-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #000;
+        }
+
+        footer {
+            background-color: #3e3e3e;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px 10px 0 0;
+            color: #fff;
+        }
+
+		footer a {
+			text-decoration: none;
+		}
+
+        footer .contact,
+        footer .credit,
+        footer .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+            }
+
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+		<div class="logo">logo</div>
+        <nav class="nav-links">
+            <a href="./home.html">Home</a>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Register</a>
+			<a href="#">Billeterie</a>
+        </nav>
+    </header>
+
+    <h1 class="main-title">Biomes</h1>
+    <section class="gallery">
+        <div class="gallery-item">
+            <a href="./reptiles.html"><img src="../images/reptiles.jpg" alt="Snowy forest"></a>
+            <h3>La Bergerie des reptiles</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="#"><img src="../images/clairière.jpg" alt="Lush forest"></a>
+            <h3>Les Clairières</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="#"><img src="../images/bois_des_pins.jpg" alt="Coral reef"></a>
+            <h3>Le Bois des pins</h3>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery-item">
+            <a href="#"><img src="../images/cascade.jpg" alt="Savane"></a>
+            <h3>Le Vallon des cascades</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="#"><img src="../images/plateau.jpg" alt="Toundra"></a>
+            <h3>Le Plateau</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="#"><img src="../images/belvedere.jpg" alt="Dsert"></a>
+            <h3>Le Belvédère</h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <h4>contact</h4>
+            <p>email: <a href="mailto:contact@biomes.com" style="color: #fff;">contact@biomes.com</a></p>
+            <p>phone: 01 02 03 04 05</p>
+        </div>
+        <div class="credit">
+            <h4>credit</h4>
+            <p>images: <a href="https://www.pexels.com/" style="color: #fff;">pexels</a></p>
+            <p>design: <a href="#" style="color: #fff;">Camille and clara</a></p>
+        </div>
+        <div class="info">
+            <h4>info</h4>
+            <p>site made with love</p>
+            <p>and a lot of coffee</p>
+        </div>
+    </footer>
+</body>
+</html>
+

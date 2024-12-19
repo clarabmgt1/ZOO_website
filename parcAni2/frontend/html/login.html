@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form action="../php/login.php" method="post">
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Identifiant" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Mot de passe" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Pas de compte ? <a href="register.html">Créer un compte</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+document.querySelector(".btn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+    window.location.href = "home.html"; // Redirect to home.html
+});
+
+    </script>
+</body>
+</html>
